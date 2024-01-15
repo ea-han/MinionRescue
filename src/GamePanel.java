@@ -26,12 +26,12 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener, Mo
     public static final double GRAVITY = 2;
     public static final int FRICTION = 1;
 
-    ImageIcon menu1 = new ImageIcon(getClass().getResource("resources/image/environment/menu1.png"));
-    ImageIcon layer1 = new ImageIcon(getClass().getResource("resources/image/environment/layer1.png"));
-    ImageIcon layer2 = new ImageIcon(getClass().getResource("resources/image/environment/layer2.png"));
-    ImageIcon layer3 = new ImageIcon(getClass().getResource("resources/image/environment/layer3.png"));
-    ImageIcon layer4 = new ImageIcon(getClass().getResource("resources/image/environment/layer4.png"));
-    ImageIcon hudIcon = new ImageIcon(getClass().getResource("resources/image/environment/hud.png"));
+    ImageIcon menu1 = new ImageIcon("src/resources/image/environment/menu1.png");
+    ImageIcon layer1 = new ImageIcon("src/resources/image/environment/layer1.png");
+    ImageIcon layer2 = new ImageIcon("src/resources/image/environment/layer2.png");
+    ImageIcon layer3 = new ImageIcon("src/resources/image/environment/layer3.png");
+    ImageIcon layer4 = new ImageIcon("src/resources/image/environment/layer4.png");
+    ImageIcon hudIcon = new ImageIcon("src/resources/image/environment/hud.png");
 
     Font titleFont = new Font("Courier", Font.BOLD, 36);
 

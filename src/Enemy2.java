@@ -1,4 +1,5 @@
 import javax.imageio.ImageIO;
+import java.io.File;
 import java.io.IOException;
 
 public class Enemy2 extends EnemyObject {
@@ -15,12 +16,12 @@ public class Enemy2 extends EnemyObject {
         frameCount = 6;
 
         try {
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy2/enemy2_1.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy2/enemy2_2.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy2/enemy2_3.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy2/enemy2_4.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy2/enemy2_5.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy2/enemy2_5.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy2/enemy2_1.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy2/enemy2_2.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy2/enemy2_3.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy2/enemy2_4.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy2/enemy2_5.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy2/enemy2_5.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,5 +1,6 @@
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 
 public class MuzzleFlash extends GameObject {
@@ -13,10 +14,10 @@ public class MuzzleFlash extends GameObject {
         frameIndex = 0;
 
         try {
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/bullet/bullet_2.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/bullet/bullet_3.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/bullet/bullet_4.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/bullet/bullet_5.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/bullet/bullet_2.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/bullet/bullet_3.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/bullet/bullet_4.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/bullet/bullet_5.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

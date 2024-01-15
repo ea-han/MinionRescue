@@ -1,6 +1,7 @@
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -26,17 +27,17 @@ public class Player extends GameMovingObject {
         xVMax = 4;
 
         try {
-            movingFrameHolder.add(ImageIO.read(getClass().getResource("resources/image/entities/run/run_1.png")));
-            movingFrameHolder.add(ImageIO.read(getClass().getResource("resources/image/entities/run/run_2.png")));
-            movingFrameHolder.add(ImageIO.read(getClass().getResource("resources/image/entities/run/run_3.png")));
-            movingFrameHolder.add(ImageIO.read(getClass().getResource("resources/image/entities/run/run_4.png")));
-            movingFrameHolder.add(ImageIO.read(getClass().getResource("resources/image/entities/run/run_5.png")));
-            movingFrameHolder.add(ImageIO.read(getClass().getResource("resources/image/entities/run/run_6.png")));
+          movingFrameHolder.add(ImageIO.read(new File("src/resources/image/entities/run/run_1.png")));
+            movingFrameHolder.add(ImageIO.read(new File("src/resources/image/entities/run/run_2.png")));
+            movingFrameHolder.add(ImageIO.read(new File("src/resources/image/entities/run/run_3.png")));
+            movingFrameHolder.add(ImageIO.read(new File("src/resources/image/entities/run/run_4.png")));
+            movingFrameHolder.add(ImageIO.read(new File("src/resources/image/entities/run/run_5.png")));
+            movingFrameHolder.add(ImageIO.read(new File("src/resources/image/entities/run/run_6.png")));
 
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/idle/idle_1.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/idle/idle_2.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/idle/idle_3.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/idle/idle_4.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/idle/idle_1.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/idle/idle_2.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/idle/idle_3.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/idle/idle_4.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,4 +1,5 @@
 import javax.imageio.ImageIO;
+import java.io.File;
 import java.io.IOException;
 
 public class Enemy1 extends EnemyObject {
@@ -13,11 +14,11 @@ public class Enemy1 extends EnemyObject {
         frameCount = 5;
 
         try {
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy1/enemy1_1.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy1/enemy1_2.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy1/enemy1_3.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy1/enemy1_4.png")));
-            frames.add(ImageIO.read(getClass().getResource("resources/image/entities/enemy1/enemy1_5.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy1/enemy1_1.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy1/enemy1_2.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy1/enemy1_3.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy1/enemy1_4.png")));
+            frames.add(ImageIO.read(new File("src/resources/image/entities/enemy1/enemy1_5.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }
